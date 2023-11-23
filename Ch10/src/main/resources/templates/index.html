@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ch10::index</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script th:src="@{/js/user1.js}"></script>
+		<script th:src="@{/js/user2.js}"></script>
+	</head>
+	<body>
+		<h3>Ch10.Spring REST API</h3>
+		<!--
+			POSTMAN API 테스트 도구 활용 
+			 - 목록 : GET /user1
+			 - 조회 : GET /user1/{id}
+			 - 등록 : POST /user1
+			 - 수정 : PUT /user1
+			 - 삭제 : DELETE /user1/{id} 	
+		-->
+		<h4>User1</h4>		
+		<h5>API 실습</h5>
+		<button id="btnUser1s">목록</button>
+		<button id="btnUser1">조회</button>
+		<button id="btnUser1Register">등록</button>
+		<button id="btnUser1Modify">수정</button>
+		<button id="btnUser1Delete">삭제</button>
+		
+		<h5>CRUD 실습</h5>
+		<a th:href="@{/user1/list}">목록</a>
+		<a th:href="@{/user1/register}">등록</a>
+		
+		<h4>User2</h4>
+		<button id="btnUser2s">목록</button>
+		<button id="btnUser2">조회</button>
+		<button id="btnUser2Register">등록</button>
+		<button id="btnUser2Modify">수정</button>
+		<button id="btnUser2Delete">삭제</button>
+		<h5>CRUD 실습</h5>
+		<a th:href="@{/user2/list}">목록</a>
+		<a th:href="@{/user2/register}">등록</a>
+		
+		<h4>User3</h4>
+		<button id="btnUser2s">목록</button>
+		<button id="btnUser2">조회</button>
+		<button id="btnUser2Register">등록</button>
+		<button id="btnUser2Modify">수정</button>
+		<button id="btnUser2Delete">삭제</button>
+		<h5>CRUD 실습</h5>
+		<a th:href="@{/user3/list}">목록</a>
+		<a th:href="@{/user3/register}">등록</a>
+		
+		<h4>User4</h4>
+		<button id="btnUser2s">목록</button>
+		<button id="btnUser2">조회</button>
+		<button id="btnUser2Register">등록</button>
+		<button id="btnUser2Modify">수정</button>
+		<button id="btnUser2Delete">삭제</button>
+		<h5>CRUD 실습</h5>
+		<a th:href="@{/user4/list}">목록</a>
+		<a th:href="@{/user4/register}">등록</a>
+		
+		<h4>User5</h4>
+		<button id="btnUser2s">목록</button>
+		<button id="btnUser2">조회</button>
+		<button id="btnUser2Register">등록</button>
+		<button id="btnUser2Modify">수정</button>
+		<button id="btnUser2Delete">삭제</button>
+		<h5>CRUD 실습</h5>
+		<a th:href="@{/user5/list}">목록</a>
+		<a th:href="@{/user5/register}">등록</a>
+		
+		<h4>User6</h4>
+		<button id="btnUser2s">목록</button>
+		<button id="btnUser2">조회</button>
+		<button id="btnUser2Register">등록</button>
+		<button id="btnUser2Modify">수정</button>
+		<button id="btnUser2Delete">삭제</button>
+		<h5>CRUD 실습</h5>
+		<a th:href="@{/user6/list}">목록</a>
+		<a th:href="@{/user6/register}">등록</a>
+	</body>
+</html>
